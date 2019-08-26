@@ -7,12 +7,16 @@
 
   <ItemGroup>
     <Reference Include="Facepunch.Steamworks">
-      <HintPath>..\Facepunch.Steamworksv2.1.0\Release\netstandard2.0\Facepunch.Steamworks.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Projects\Merlin\Server\Facepunch.Steamworksv2.1.0\Release\netstandard2.0\Facepunch.Steamworks.dll</HintPath>
+      <Private>true</Private>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="libsteam_api.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="steamclient.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="steam_api64.dll">
